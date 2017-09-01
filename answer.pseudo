@@ -1,0 +1,38 @@
+In python:(Backend)
+
+import random
+""" random is in-built package in python it has some build-in functions like randrange to generate random numbers """
+
+def num_ran():
+	""" It allows you to enter your name """
+	name = raw_input("What is your name: ")
+	""" It genereate random numbers """
+	number = random.randrange(6, 16)
+	""" It prints the name along with the generated random number """
+	print "{} {}".format(name, number)
+	
+""" This function will call when you run this code with .py extension """
+num_ran()
+
+
+In Javascript:(copy and paste it a new file with .html extension)
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function myfunction(){
+        name = document.getElementById('myname').value
+        number = Math.floor(Math.random() * (16-6)) + 6
+        document.getElementById('data').innerText = name+" "+number
+        return true
+    }
+</script>
+
+</head>
+<body>
+    Enter your name : <input type="text" id="myname" value="" />
+    <button onclick="myfunction()">Submit</button>    
+    <p id="data"></p>
+</body>
+</html>
